@@ -19,9 +19,9 @@
     </style>
     <title>Academics</title>
   </head>
-  <body>
-    <section>
-      <h1>Academics</h1>
+  <body class="bg-gray-200">
+    <section class="m-2 md:ml-16 mr-16 lg:ml-18 mr-18">
+      <h1 class="text-orange-600 text-3xl py-2">Academics</h1>
       <p>
         Educorp University’s Department of Computational Intelligence and Data
         Technologies offers a comprehensive suite of degree programs across
@@ -37,103 +37,518 @@
         fields while receiving expert guidance before selecting your major.
       </p>
       <button
-        class="bg-orange-600 text-white rounded-3xl p-2 m-2 hover:bg-gray-800"
+        class="bg-orange-600 text-white rounded-3xl py-1.5 px-3 mr-6 mt-6 hover:bg-gray-800"
       >
+        <a href="academics.html"></a>
         undergraduate programs
       </button>
       <button
-        class="bg-orange-600 text-white rounded-3xl p-2 m-2 hover:bg-gray-800"
+        class="bg-orange-600 text-white rounded-3xl py-1.5 px-3 mr-6 mt-6 hover:bg-gray-800"
       >
-        Master’s Degree Programs
+        <a href="graduateprograms.html" target="_blank"
+          >Master’s Degree Programs</a
+        >
       </button>
       <button
-        class="bg-orange-600 text-white rounded-3xl p-2 m-2 hover:bg-gray-800"
+        class="bg-orange-600 text-white rounded-3xl py-1.5 px-3 mr-6 mt-6 hover:bg-gray-800"
       >
-        Doctoral (PhD) Degree Programs
+        <a href="graduateprograms.html" target="_blank"
+          >Doctoral (PhD) Degree Programs</a
+        >
       </button>
     </section>
-    <section>
-      <h1><b>Undergraduate Courses</b></h1>
+    <hr>
+    <br>
+    <section class="m-2 md:ml-16 mr-16 lg:ml-18 mr-18">
+      <h1 class="text-2xl m-4"><b>Undergraduate Courses</b></h1>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_DS.jpg"
             style="width: 250px; height: 150px"
             alt="illustration image of Data Science bsc"
           />
-          <p>Bachelor of Science in Data Science</p>
+          <p>Bachelor of Science in Data Science</p><br>
+          <button
+            popovertarget="bscdatascience"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div
+            style="width: 60%"
+            class="m-4 p-8 rounded-3xl bg-gray-600 text-white"
+            id="bscdatascience"
+            popover
+          >
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              The Bachelor of Science in Data Science at Educorp University is a
+              forward-looking undergraduate program designed to prepare students
+              for the data-driven future of business, science, and technology.
+              This program combines mathematics, statistics, and computer
+              science with real-world data applications to equip students with
+              the analytical and technical skills required to collect, manage,
+              analyze, and visualize large datasets. Students begin with
+              foundational courses in calculus, linear algebra, and programming,
+              then progress into specialized areas such as statistical modeling,
+              machine learning, big data systems, and data visualization.
+            </p>
+            <br />
+            <p>
+              Graduates of the program are well-positioned for careers as data
+              scientists, business analysts, research analysts, data engineers,
+              or policy advisors. The degree also serves as a strong foundation
+              for further study in applied statistics, machine learning, or
+              artificial intelligence at the graduate level. With its strong
+              industry linkages, modern computing labs, and a curriculum
+              grounded in ethical and responsible data use, the BSc in Data
+              Science at Educorp University prepares students to lead in the
+              digital economy.
+            </p>
+            <button
+              popovertarget="bscdatascience"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 mt-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
-          <img
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
+          <img style="width: 250px; height: 150px;"
             src="images/BS_AI.jpg"
-            style="width: 250px; height: 150px"
             alt=""
           />
-          <p>Bachelor of Science in Artificial Intelligence</p>
+          <p>Bachelor of Science in Artificial Intelligence</p><br>
+          <button
+            popovertarget="bscartificialintelligence"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div
+            style="width: 60%"
+            class="m-4 p-8 rounded-3xl bg-gray-600 text-white"
+            id="bscartificialintelligence"
+            popover
+          >
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              The Bachelor of Science in Artificial Intelligence at Educorp
+              University offers students a deep dive into the world of
+              intelligent systems, autonomous agents, and human-machine
+              interaction. The program combines foundational computer science
+              with specialized AI topics such as natural language processing,
+              robotics, neural networks, computer vision, and knowledge
+              representation. Students are trained to build systems that can
+              learn, reason, and adapt in real time — from self-driving vehicles
+              to recommendation engines.
+            </p>
+            <br />
+            <p>
+              With a curriculum aligned to global AI standards, learners work on
+              interdisciplinary projects that blend ethical theory, AI
+              regulation, and real-world innovation. They gain hands-on
+              experience using tools such as TensorFlow, OpenCV, and PyTorch
+              while engaging in research and development projects in sectors
+              like healthcare, logistics, and education. By the end of the
+              program, students are equipped to design and deploy AI systems
+              that are ethical, scalable, and impactful.
+            </p>
+            <button
+              popovertarget="bscartificialintelligence"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 mt-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_ML.jpg"
             style="width: 250px; height: 150px"
             alt=""
           />
-          <p>Bachelor of Science in Machine Learning</p>
+          <p>Bachelor of Science in Machine Learning</p><br>
+          <button
+            popovertarget="bscml"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bscml" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              The Bachelor of Science in Machine Learning is a specialized
+              degree focused on algorithms that allow machines to learn from
+              data and improve their performance over time. Students develop
+              expertise in supervised and unsupervised learning, deep learning,
+              reinforcement learning, and predictive analytics. The curriculum
+              blends core programming, mathematical modeling, and applied
+              statistics with cutting-edge ML techniques used in real-world
+              problem solving.
+            </p>
+            <br />
+            <p>
+              Students participate in lab-based learning and simulation
+              environments where they train, test, and evaluate models across
+              diverse fields such as speech recognition, fraud detection,
+              climate forecasting, and bioinformatics. With a strong emphasis on
+              both theoretical depth and hands-on experience, the program
+              prepares graduates to become machine learning engineers,
+              quantitative analysts, or AI researchers ready to shape the future
+              of intelligent automation.
+            </p>
+            <button
+              popovertarget="bscml"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 mt-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_CS&DA.jpg"
             style="width: 250px; height: 150px"
             alt=""
           />
-          <p>Bachelor of Science in Computer Science with Data Analytics</p>
+          <p>Bachelor of Science in Computer Science with Data Analytics</p><br>
+          <button
+            popovertarget="bsccsda"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bsccsda" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              The Bachelor of Science in Computer Science with Data Analytics
+              blends traditional computer science education with modern
+              analytical techniques. Students gain a solid foundation in
+              algorithms, systems design, databases, and programming, while
+              developing advanced skills in data exploration, statistical
+              analysis, and visualization. The program is ideal for students
+              interested in building software and analyzing data to drive
+              decisions.
+            </p>
+            <br />
+            <p>
+              Practical learning is a core feature, with students using tools
+              like Python, Tableau, and Power BI to solve business and societal
+              challenges. Graduates leave with the ability to not only build
+              computational systems but also derive insights from data—making
+              them well-suited for roles such as software developers, data
+              analysts, systems engineers, or tech consultants in data-driven
+              industries.
+            </p>
+            <button
+              popovertarget="bsccsda"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 mt-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_Business Analytics and AI.jpg"
             style="width: 250px; height: 150px"
             alt=""
           />
-          <p>Bachelor of Science in Business Analytics and AI</p>
+          <p>Bachelor of Science in Business Analytics and AI</p><br>
+          <button
+            popovertarget="bscbaai"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bscbaai" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              The BSc in Business Analytics and AI equips students with a dual
+              skillset in data-driven business strategy and intelligent systems.
+              The program bridges business acumen and technical proficiency,
+              offering coursework in market analytics, machine learning,
+              financial modeling, and decision support systems. Students explore
+              how AI technologies can transform industries and improve
+              organizational performance.
+            </p>
+            <br />
+            <p>
+              With real-world case studies and industry collaborations, students
+              learn to apply AI techniques to marketing, operations, supply
+              chains, and customer engagement. Graduates are prepared for roles
+              such as business intelligence analysts, AI strategy consultants,
+              or product data managers in high-growth sectors like fintech,
+              retail, and digital services.
+            </p>
+            <button
+              popovertarget="bscbaai"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 mt-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
-            src="images/BS_Business Analytics and AI.jpg"
+            src="images/BS_Computational Modelling and Simulation.jpg"
             style="width: 250px; height: 150px"
             alt=""
           />
-          <p>Bachelor of Science in Computational Modeling and Simulation</p>
+          <p>Bachelor of Science in Computational Modeling and Simulation</p><br>
+          <button
+            popovertarget="bsccms"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bsccms" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              This interdisciplinary degree focuses on mathematical modeling,
+              simulation techniques, and computational problem-solving across
+              scientific and engineering domains. Students learn to translate
+              real-world systems into digital models, enabling predictions,
+              testing, and optimization through simulation. The curriculum
+              includes applied mathematics, physics-based modeling, algorithm
+              design, and software development.
+            </p>
+            <br />
+            <p>
+              Graduates are equipped to work in areas such as systems biology,
+              environmental forecasting, engineering design, and urban planning.
+              They gain experience using simulation tools like MATLAB and
+              Simulink, as well as general-purpose programming languages, to
+              create models that support innovation and decision-making in
+              complex environments.
+            </p>
+            <button
+              popovertarget="bsccms"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 mt-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_Applied Statistics with Data Science.jpg"
             style="width: 250px; height: 150px"
             alt=""
           />
-          <p>Bachelor of Applied Statistics with Data Science</p>
+          <p>Bachelor of Applied Statistics with Data Science</p><br>
+          <button
+            popovertarget="bscaswds"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bscaswds" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              The Bachelor of Applied Statistics with Data Science focuses on
+              statistical theory and practical data applications. Students are
+              trained in probability, regression analysis, hypothesis testing,
+              and survey methodology, along with modern data science tools such
+              as Python, R, and SQL. The goal is to produce professionals
+              capable of extracting knowledge from data and solving real-world
+              problems using statistical reasoning.
+            </p>
+            <br />
+            <p>
+              In addition to classroom instruction, students undertake fieldwork
+              and projects involving demographic studies, risk modeling, and
+              public health data. This degree opens doors to careers in
+              government statistics offices, market research, healthcare
+              analytics, and global development organizations where quantitative
+              skills are in high demand.
+            </p>
+            <button
+              popovertarget="bscaswds"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 m-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_Software Engineering (AI Pathway).jpg"
             style="width: 250px; height: 150px"
             alt=""
           />
-          <p>Bachelor of Engineering in Software Engineering (AI Pathway)</p>
+          <p>Bachelor of Engineering in Software Engineering (AI Pathway)</p><br>
+          <button
+            popovertarget="bscseAI"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bscseAI" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              This program merges core software engineering principles with
+              artificial intelligence specialization. Students learn how to
+              design, build, test, and maintain intelligent software systems
+              with a focus on automation, scalability, and user experience. Core
+              subjects include object-oriented programming, system architecture,
+              AI frameworks, and cloud computing.
+            </p>
+            <br />
+            <p>
+              The AI pathway introduces advanced modules in natural language
+              processing, intelligent agents, and human-AI interaction. With
+              hands-on lab work, internships, and team-based projects, graduates
+              are prepared to become AI software engineers, system architects,
+              or product developers capable of delivering intelligent solutions
+              across platforms.
+            </p>
+            <button
+              popovertarget="bscseAI"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 m-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_Technology in AI and Robotics.jpg"
-            style="width: 250px; height: 150px"
+            style="width: 250px; height: 150px;"
             alt=""
           />
-          <p>Bachelor of Technology in AI and Robotics</p>
+          <p>Bachelor of Technology in AI and Robotics</p><br>
+          <button
+            popovertarget="bsctair"
+            class="bg-orange-600 text-white rounded-2xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bsctair" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              This practical, tech-focused program trains students in designing
+              autonomous systems, robotic hardware integration, and embedded AI
+              technologies. Coursework includes robotics engineering, control
+              systems, machine vision, and sensor integration alongside deep
+              learning and intelligent decision-making techniques.
+            </p>
+            <br />
+            <p>
+              Students get hands-on experience building robotic prototypes and
+              simulating real-world environments in labs. The program prepares
+              graduates for roles in robotics development, industrial
+              automation, drone technology, and smart manufacturing — fields
+              where AI meets hardware to drive intelligent innovation.
+            </p>
+            <button
+              popovertarget="bsctair"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 m-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
-        <div class="shadow-lg m-2 p-2">
+        <div class="bg-white rounded-lg shadow-lg m-2 p-2">
           <img
             src="images/BS_Information Technology with Machine Intelligence.jpg"
-            style="width: 250px; height: 150px"
+            style="width: 250px; height: 150px;"
             alt=""
           />
-          <p>Bachelor of Information Technology with Machine Intelligence</p>
+          <p>Bachelor of Information Technology with Machine Intelligence</p><br>
+          <button
+            popovertarget="bscitmi"
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            View Details
+          </button>
+          <div style="width: 60%" class="m-4 p-8 rounded-3xl bg-gray-600 text-white" id="bscitmi" popover>
+            <h2 class="text-orange-600"><b>Program Overview</b></h2>
+            <p>
+              Blending IT infrastructure with intelligent computing, this
+              program prepares students to build, manage, and secure data-driven
+              systems that leverage machine intelligence. Core subjects cover
+              networking, cybersecurity, systems administration, and software
+              development, while advanced courses focus on intelligent data
+              processing, anomaly detection, and AI-enhanced systems.
+            </p>
+            <br />
+            <p>
+              Graduates can pursue careers as IT specialists, system analysts,
+              or AI-focused IT consultants who bring smart automation to
+              enterprise environments. The program’s emphasis on applied
+              intelligence in system operations makes it ideal for students
+              interested in practical, tech-enabled problem-solving.
+            </p>
+            <button
+              popovertarget="bscitmi"
+              popovertargetaction="hide"
+              class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 mt-4 hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 mb-2 hover:bg-gray-800"
+          >
+            Apply
+          </button>
         </div>
       </div>
     </section>
