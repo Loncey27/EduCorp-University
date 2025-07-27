@@ -20,6 +20,26 @@
     <title>Academics</title>
   </head>
   <body class="bg-gray-200">
+    <nav class="flex bg-white flex flex-wrap items-center justify-around">
+      <img style="width: 140px; height: 140px" src="images/LoGo.png" alt="" />
+      <div class="flex flex-wrap">
+        <a class="mx-4 hover:text-orange-600" href="index.html">Home</a>
+        <a class="mx-4 hover:text-orange-600" href="research.html">Research</a>
+        <a class="mx-4 hover:text-orange-600" href="academics.html"
+          >Academics</a
+        >
+        <a class="mx-4 hover:text-orange-600" href="graduateprograms.html"
+          >Graduate Programs</a
+        >
+      </div>
+      <a href="apply.html"
+        ><button
+          class="bg-gray-600 rounded-lg p-2 text-white hover:bg-orange-600"
+        >
+          Register
+        </button></a
+      >
+    </nav>
     <section class="m-2 md:ml-16 mr-16 lg:ml-18 mr-18">
       <h1 class="text-orange-600 text-3xl py-2">Academics</h1>
       <p>
@@ -625,4 +645,41 @@
       </div>
     </section>
   </body>
+  <footer
+    class="bg-gray-600 w-full text-white flex flex-wrap justify-center md:justify-around gap-4 p-6"
+  >
+    <img style="width: 140px; height: 140px" src="images/LoGo.png" alt="" />
+    <div class="flex flex-col items-center md:items-start space-y-2">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="academics.html">Academics</a>
+      <a href="graduateprograms.html">Graduate Programs</a>
+      <a href="apply.html">Application</a>
+    </div>
+    <div class="flex flex-col items-center md:items-start space-y-2">
+      <a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+      <a href="#"><i class="fa-brands fa-square-youtube"></i> YouTube</a>
+      <a href="#"><i class="fa-brands fa-square-x-twitter"></i> x</a>
+      <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+    </div>
+    <div class="flex flex-col items-center md:items-start space-y-2">
+      <h1>Subscribe to Our Newsletter</h1>
+      <form class="flex flex-col space-y-2 w-64">
+        <input
+          class="m-1 px-1 rounded-2xl text-black"
+          type="text"
+          placeholder="Your Name"
+          required
+        /><br />
+        <input
+          class="m-1 px-1 rounded-2xl text-black"
+          type="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
 </html>
