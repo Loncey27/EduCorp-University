@@ -1,146 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <script
+      src="https://kit.fontawesome.com/2aaa300193.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: Open Sans;
+      }
+    </style>
+    <title>Apply</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-  <script src="https://kit.fontawesome.com/2aaa300193.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      font-family: Open Sans;
-    }
-  </style>
-  <title>Apply</title>
-</head>
-
-<body class="bg-gray-100">
-  <nav class="flex bg-white flex flex-wrap items-center justify-around">
-    <img class="w-34 h-20" src="images/LoGo.png" alt="" />
-    <div class="flex flex-wrap font-medium">
-      <a class="mx-4 hover:text-orange-600" href="index.html">Home</a>
-      <a class="mx-4 hover:text-orange-600" href="research.html">Research</a>
-      <a class="mx-4 hover:text-orange-600" href="academics.html">Academics</a>
-      <a class="mx-4 hover:text-orange-600" href="graduateprograms.html">Graduate Programs</a>
-    </div>
-    <a href="apply.html"><button class="bg-gray-600 rounded-lg p-2 text-white hover:bg-orange-600">
-        Register
-      </button></a>
-  </nav>
-  
-  <div class="bg-gray-200">
-    <h1 class="text-orange-600 text-4xl text-center p-4">Educorp University Program Application Form</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 m-2 md:ml-16 mr-16 lg:ml-18 mr-18">
-      <div class="m-2">
-        <h2 class="text-2xl p-2 text-orange-600">Join Educorp University and shape your future with world-class programs in Data Science, AI, and Machine Learning.</h2>
-        <p class="text-xl p-2 text-orange-600">Apply today and become part of a community where innovation meets opportunity.</p>
-        <img class="rounded-2xl" src="images/apply_image.jpg" alt="">
+  <body class="bg-gray-100">
+    <nav class="flex bg-white flex flex-wrap items-center justify-around">
+      <img class="w-34 h-20" src="images/LoGo.png" alt="" />
+      <div class="flex flex-wrap font-medium">
+        <a class="mx-4 hover:text-orange-600" href="index.html">Home</a>
+        <a class="mx-4 hover:text-orange-600" href="research.html">Research</a>
+        <a class="mx-4 hover:text-orange-600" href="academics.html"
+          >Academics</a
+        >
+        <a class="mx-4 hover:text-orange-600" href="graduateprograms.html"
+          >Graduate Programs</a
+        >
       </div>
-      <form class="bg-white m-2 rounded-2xl p-4 inline-block">
-        <fieldset>
-          <legend class="text-orange-600"><strong>1. Personal Information</strong></legend>
-          <label>Full Name: <input class="m-2 rounded-2xl w-64 p-1 outline outline-1 outline-orange-200" type="text" required /></label><br />
-          <label>Date of Birth: <input type="date" required /></label><br />
-          <label>Gender:
-            <select class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" name="gender">
-              <option value="">--Select--</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </label><br />
-          <label>Nationality: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="text" name="nationality" required /></label><br />
-          <label>Email Address: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="email" name="email" required /></label><br />
-          <label>Phone Number: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="tel" name="phone" required /></label><br />
-          <label>Postal Address: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="text" name="address" /></label>
-        </fieldset>
+      <a href="apply.html"
+        ><button
+          class="bg-gray-600 rounded-lg p-2 text-white hover:bg-orange-600"
+        >
+          Apply
+        </button></a
+      >
+    </nav>
 
-        <fieldset>
-          <legend class="text-orange-600"><strong>2. Academic Background</strong></legend>
-          <label>Highest Qualification: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="text" name="qualification" required /></label><br />
-          <label>Institution Attended: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="text" name="institution" /></label><br />
-          <label>Year of Graduation: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="text" name="graduation_year" /></label><br />
-          <label>Relevant Subjects/Majors: <input class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" type="text" name="majors" /></label>
-        </fieldset>
+    <div class="bg-gray-200">
+      <h1 class="text-orange-600 text-3xl text-center p-4">
+        Educorp University Program Application Form
+      </h1>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 m-2 md:ml-16 mr-16 lg:ml-18 mr-18"
+      >
+        <div class="m-2">
+          <h2 class="text-2xl p-2 text-orange-600">
+            Join Educorp University and shape your future with world-class
+            programs in Data Science, AI, and Machine Learning.
+          </h2>
+          <p class="text-xl p-2 text-orange-600">
+            Apply today and become part of a community where innovation meets
+            opportunity.
+          </p>
+          <img class="rounded-2xl" src="images/apply_image.jpg" alt="" />
+        </div>
+        <form class="bg-white m-2 rounded-2xl p-4 inline-block">
+          <fieldset>
+            <legend class="text-orange-600">
+              <strong>1. Personal Information</strong>
+            </legend>
+            <label
+              >Full Name:
+              <input
+                class="m-2 rounded-2xl w-64 p-1 outline outline-1 outline-orange-200"
+                type="text"
+                required /></label
+            ><br />
+            <label>Date of Birth: <input type="date" required /></label><br />
+            <label
+              >Gender:
+              <select
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                name="gender"
+              >
+                <option value="">--Select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select> </label
+            ><br />
+            <label
+              >Nationality:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="text"
+                name="nationality"
+                required /></label
+            ><br />
+            <label
+              >Email Address:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="email"
+                name="email"
+                required /></label
+            ><br />
+            <label
+              >Phone Number:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="tel"
+                name="phone"
+                required /></label
+            ><br />
+            <label
+              >Postal Address:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="text"
+                name="address"
+            /></label>
+          </fieldset>
 
-        <fieldset>
-          <legend class="m-2 rounded-2xl p-1 text-orange-600"><strong>3. Program Selection</strong></legend>
-          <label class="m-2 rounded-2xl p-1">Level of Study:</label><br />
-          <input class="m-2 rounded-2xl p-1" type="radio" name="level" value="undergraduate" required /> Undergraduate<br />
-          <input class="m-2 rounded-2xl p-1" type="radio" name="level" value="masters" /> Master's<br />
-          <input class="m-2 rounded-2xl p-1" type="radio" name="level" value="phd" /> PhD<br />
+          <fieldset>
+            <legend class="text-orange-600">
+              <strong>2. Academic Background</strong>
+            </legend>
+            <label
+              >Highest Qualification:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="text"
+                name="qualification"
+                required /></label
+            ><br />
+            <label
+              >Institution Attended:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="text"
+                name="institution" /></label
+            ><br />
+            <label
+              >Year of Graduation:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="text"
+                name="graduation_year" /></label
+            ><br />
+            <label
+              >Relevant Subjects/Majors:
+              <input
+                class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+                type="text"
+                name="majors"
+            /></label>
+          </fieldset>
 
-          <label>Select Program:</label><br />
-          <select class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200" name="program" required>
-            <optgroup label="Undergraduate">
-              <option value="">--Choose a Program--</option>
-              <option value="bsc_data_science">BSc in Data Science</option>
-              <option value="bsc_ai">BSc in Artificial Intelligence</option>
-              <option value="bsc_ml">BSc in Machine Learning</option>
-              <option value="bsc_cs_analytics">BSc in CS with Data Analytics</option>
-              <option value="bsc_ba_ai">BSc in Business Analytics and AI</option>
-              <option value="bsc_simulation">BSc in Computational Modeling & Simulation</option>
-              <option value="bsc_statistics_ds">BSc in Applied Statistics with Data Science</option>
-              <option value="beng_software_ai">BEng in Software Engineering (AI Pathway)</option>
-              <option value="btech_ai_robotics">BTech in AI and Robotics</option>
-              <option value="bsc_it_mi">BSc in IT with Machine Intelligence</option>
-            </optgroup>
-            <optgroup label="Master's">
-              <option value="msc_data_analytics">MSc in Data Science and Analytics</option>
-              <option value="msc_ai_systems">MSc in AI and Intelligent Systems</option>
-              <option value="msc_ml_eng">MSc in Machine Learning Engineering</option>
-              <option value="meng_intelligent">MEng in Intelligent Systems</option>
-              <option value="msc_stats_pa">MSc in Computational Statistics and Predictive Analytics</option>
-            </optgroup>
-            <optgroup label="PhD">
-              <option value="phd_ai">PhD in Artificial Intelligence</option>
-              <option value="phd_ml_hcc">PhD in Machine Learning & Human-Centered Computing</option>
-              <option value="phd_decision_sciences">PhD in Data-Driven Decision Sciences</option>
-              <option value="phd_comp_intelligence">PhD in Computational Intelligence</option>
-              <option value="phd_applied_ds">PhD in Applied Data Science for Emerging Technologies</option>
-            </optgroup>
-          </select><br />
+          <fieldset>
+            <legend class="m-2 rounded-2xl p-1 text-orange-600">
+              <strong>3. Program Selection</strong>
+            </legend>
+            <label class="m-2 rounded-2xl p-1">Level of Study:</label><br />
+            <input
+              class="m-2 rounded-2xl p-1"
+              type="radio"
+              name="level"
+              value="undergraduate"
+              required
+            />
+            Undergraduate<br />
+            <input
+              class="m-2 rounded-2xl p-1"
+              type="radio"
+              name="level"
+              value="masters"
+            />
+            Master's<br />
+            <input
+              class="m-2 rounded-2xl p-1"
+              type="radio"
+              name="level"
+              value="phd"
+            />
+            PhD<br />
 
-          <label class="m-2 rounded-2xl">Preferred Mode of Study:</label><br />
-          <input class="m-2 rounded-2xl" type="checkbox" type="radio" name="mode" value="full_time" /> Full-time
-          <input class="m-2 rounded-2xl" type="checkbox" name="mode" value="part_time" /> Part-time
-          <input class="m-2 rounded-2xl" type="checkbox" name="mode" value="online" /> Online<br />
+            <label>Select Program:</label><br />
+            <select
+              class="m-2 rounded-2xl p-1 outline outline-1 outline-orange-200"
+              name="program"
+              required
+            >
+              <optgroup label="Undergraduate">
+                <option value="">--Choose a Program--</option>
+                <option value="bsc_data_science">BSc in Data Science</option>
+                <option value="bsc_ai">BSc in Artificial Intelligence</option>
+                <option value="bsc_ml">BSc in Machine Learning</option>
+                <option value="bsc_cs_analytics">
+                  BSc in CS with Data Analytics
+                </option>
+                <option value="bsc_ba_ai">
+                  BSc in Business Analytics and AI
+                </option>
+                <option value="bsc_simulation">
+                  BSc in Computational Modeling & Simulation
+                </option>
+                <option value="bsc_statistics_ds">
+                  BSc in Applied Statistics with Data Science
+                </option>
+                <option value="beng_software_ai">
+                  BEng in Software Engineering (AI Pathway)
+                </option>
+                <option value="btech_ai_robotics">
+                  BTech in AI and Robotics
+                </option>
+                <option value="bsc_it_mi">
+                  BSc in IT with Machine Intelligence
+                </option>
+              </optgroup>
+              <optgroup label="Master's">
+                <option value="msc_data_analytics">
+                  MSc in Data Science and Analytics
+                </option>
+                <option value="msc_ai_systems">
+                  MSc in AI and Intelligent Systems
+                </option>
+                <option value="msc_ml_eng">
+                  MSc in Machine Learning Engineering
+                </option>
+                <option value="meng_intelligent">
+                  MEng in Intelligent Systems
+                </option>
+                <option value="msc_stats_pa">
+                  MSc in Computational Statistics and Predictive Analytics
+                </option>
+              </optgroup>
+              <optgroup label="PhD">
+                <option value="phd_ai">PhD in Artificial Intelligence</option>
+                <option value="phd_ml_hcc">
+                  PhD in Machine Learning & Human-Centered Computing
+                </option>
+                <option value="phd_decision_sciences">
+                  PhD in Data-Driven Decision Sciences
+                </option>
+                <option value="phd_comp_intelligence">
+                  PhD in Computational Intelligence
+                </option>
+                <option value="phd_applied_ds">
+                  PhD in Applied Data Science for Emerging Technologies
+                </option>
+              </optgroup></select
+            ><br />
 
-          <label class="m-2 rounded-2xl">Intended Start Date (Month/Year): <input type="date" /></label>
-        </fieldset>
+            <label class="m-2 rounded-2xl">Preferred Mode of Study:</label
+            ><br />
+            <input
+              class="m-2 rounded-2xl"
+              type="checkbox"
+              type="radio"
+              name="mode"
+              value="full_time"
+            />
+            Full-time
+            <input
+              class="m-2 rounded-2xl"
+              type="checkbox"
+              name="mode"
+              value="part_time"
+            />
+            Part-time
+            <input
+              class="m-2 rounded-2xl"
+              type="checkbox"
+              name="mode"
+              value="online"
+            />
+            Online<br />
 
-        <button class="bg-orange-600 text-white rounded-3xl py-1 px-3 m-2 hover:bg-gray-800" type="submit">Submit Application</button>
+            <label class="m-2 rounded-2xl"
+              >Intended Start Date (Month/Year): <input type="date"
+            /></label>
+          </fieldset> <br>
+
+          <button
+            class="bg-orange-600 text-white rounded-3xl py-1 px-3 m-2 hover:bg-gray-800"
+            type="submit"
+          >
+            Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <footer
+    class="bg-gray-600 w-full text-white flex flex-wrap justify-center md:justify-around gap-4 p-6"
+  >
+    <img class="w-34 h-20" src="images/LoGo.png" alt="" />
+    <div class="flex flex-col items-center md:items-start space-y-2">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="academics.html">Academics</a>
+      <a href="graduateprograms.html">Graduate Programs</a>
+      <a href="apply.html">Application</a>
+    </div>
+    <div class="flex flex-col items-center md:items-start space-y-2">
+      <a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+      <a href="#"><i class="fa-brands fa-square-youtube"></i> YouTube</a>
+      <a href="#"><i class="fa-brands fa-square-x-twitter"></i> x</a>
+      <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+    </div>
+    <div class="flex flex-col items-center md:items-start space-y-2">
+      <h1>Subscribe to Our Newsletter</h1>
+      <form class="flex flex-col space-y-2 w-64">
+        <input
+          class="m-1 px-1 rounded-2xl text-black"
+          type="text"
+          placeholder="Your Name"
+          required
+        /><br />
+        <input
+          class="m-1 px-1 rounded-2xl text-black"
+          type="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <button type="submit">Subscribe</button>
       </form>
     </div>
-
-  </div>
-
-
-</body>
-<footer class="bg-gray-600 w-full text-white flex flex-wrap justify-center md:justify-around gap-4 p-6">
-  <img class="w-34 h-20" src="images/LoGo.png" alt="" />
-  <div class="flex flex-col items-center md:items-start space-y-2">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="academics.html">Academics</a>
-    <a href="graduateprograms.html">Graduate Programs</a>
-    <a href="apply.html">Application</a>
-  </div>
-  <div class="flex flex-col items-center md:items-start space-y-2">
-    <a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
-    <a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>
-    <a href="#"><i class="fa-brands fa-square-youtube"></i> YouTube</a>
-    <a href="#"><i class="fa-brands fa-square-x-twitter"></i> x</a>
-    <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
-  </div>
-  <div class="flex flex-col items-center md:items-start space-y-2">
-    <h1>Subscribe to Our Newsletter</h1>
-    <form class="flex flex-col space-y-2 w-64">
-      <input class="m-1 px-1 rounded-2xl text-black" type="text" placeholder="Your Name" required /><br />
-      <input class="m-1 px-1 rounded-2xl text-black" type="email" placeholder="Your Email Address" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-</footer>
+  </footer>
 </html>
